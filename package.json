@@ -1,35 +1,26 @@
 {
-  "name": "teach-me",
+  "name": "nodejs-passport-local",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "connect-flash": "^0.1.1",
-    "ejs-mate": "^3.0.0",
-    "expres": "0.0.5",
+    "ejs-mate": "^2.3.0",
     "express": "^4.17.1",
-    "express-session": "^1.16.2",
+    "express-session": "^1.15.6",
     "mongoose": "^5.6.6",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/armando34u/Teach-me.git"
-  },
-  "bugs": {
-    "url": "https://github.com/armando34u/Teach-me/issues"
-  },
-  "homepage": "https://github.com/armando34u/Teach-me#readme"
+  "description": ""
 }

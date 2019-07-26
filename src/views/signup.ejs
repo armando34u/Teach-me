@@ -1,0 +1,14 @@
+<%- layout('layouts/main')%>
+<h1>Registro de Usuarios</h1>
+<form action="/signup" method="POST">
+  <input type="text" name="nombreCompleto" placeholder="Nombre Completo">
+  <input type="text" name="ci" placeholder="ci">
+  <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <input type="text" name="rol" placeholder="Rol">
+  <button type="submit">
+    Registrar
+  </button>
+</form>
+
