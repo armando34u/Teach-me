@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Teach.me</title>
+   <link  rel="icon"   href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/styles/styleLogin.css">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
 </head>
 <body>
   <!-- NAVIGATION -->
   <% if (!user) { %>
-  <a href="/signinEstudiantes">   Estudiantes</a>
-  <a href="/signinDocentes">   Docentes</a>
-  <a href="/signinAdministradores">   Administradores</a>
+    <div class="navegacion" style="background-color:#05426b; height:60px;padding-top:15px; ">
+      <a id="aEstudiantes" href="/signinEstudiantes">   Estudiantes</a>
+      <a id="aDocentes" href="/signinDocentes">   Docentes</a>
+      <a id="aAdministradores" href="/signinAdministradores">   Administradores</a>
+    </div>
+  
   <!--
 <a href="/signup">Signup</a>
   -->
-  
+ 
   <% } else { %>
-  <a href="/logout">Logout</a>
+  <!--
+ <a href="/logout">Logout</a>
   <a href="/profile">Profle</a>
+  -->
+  <div class="navegacion" style="background-color:#007777; height:60px;padding-top:15px; ">
+    <a id="aEstudiantes" href="/profileEstudiantes">   Estudiantes</a>
+    <a id="aDocentes" href="/signinDocentes">   Docentes</a>
+    <a id="aAdministradores" href="/signinAdministradores">   Administradores</a>
+  </div>
   <% } %>
 
   <%if (signinMessage) {%>

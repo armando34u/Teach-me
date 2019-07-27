@@ -9,18 +9,19 @@
 </form>
 -->
 
-
+<link rel="stylesheet" type="text/css" href="/styles/styleLoginDocentes.css">
 
 <div class="login-page">
     <h1 class="Titulo">Teache.me</h1>
     <br>
       <br>
+      <h2>Docente</h2>
       <div class="form">
           <form class="login-form" action="/signinDocentes" method="POST">
-            <label class="label">Correo</label>
+            <label class="label">Correo:</label>
               <!-- <input type="text" name="nombreUsuario" placeholder="nombre de usuario"/> -->
-        <input type="email" name="email" placeholder="email"/>
-            <label class="label">Contraseña</label>
+        <input id="email"type="email" name="email" placeholder="email"/>
+            <label class="label">Contraseña:</label>
               <input type="password" name="password" placeholder="contraseña"/>
             <button>Entrar</button>
           </form>

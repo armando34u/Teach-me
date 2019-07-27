@@ -1,14 +1,74 @@
-<%- layout('layouts/main')%>
-<h1>Registro de Usuarios</h1>
-<form action="/signup" method="POST">
-  <input type="text" name="nombreCompleto" placeholder="Nombre Completo">
-  <input type="text" name="ci" placeholder="ci">
-  <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
-  <input type="email" name="email" placeholder="Email">
-  <input type="password" name="password" placeholder="Password">
-  <input type="text" name="rol" placeholder="Rol">
-  <button type="submit">
-    Registrar
-  </button>
-</form>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teach.me</title>
+  <link  rel="icon"   href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body style="height: 100%;">
+  <!-- NAVIGATION -->
+  
+  <a href="/logout">Cerrar Sesión</a>
+ 
+    <h1 style="text-align: center;font-size:25px;">Bienvenido Administrador!!</h2>
+    
+    
+    <div class="login-page" style="width: 450px;
+    padding: 0 0 0;
+    margin: auto;
+    text-align: center;">
+      
+      <br>
+        <br>
+        <h2 style="text-align: center;background:#324966;margin-bottom:0;color:white;">Registro de Usuarios</h2>
+        <div class="form" style="position: relative;
+        z-index: 1;
+        background: white;
+        max-width: 450px;
+        margin: 0 auto 100px;
+        padding: 45px 45px 20px 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      ">
+            <form style="font-family: 'Roboto', sans-serif;" class="login-form" action="/signup" method="POST">
+              <label class="label">Nombre Completo:</label>
+              <input style="margin-left: 4px;" type="text" name="nombreCompleto" placeholder="nombre completo"/>
+              <div><label class="label">CI:</label>
+                <input style="margin-left: 124px;" type="text" name="ci" placeholder="ci"/>
+                </div>
+              <div> <label style="display: inline-block;" class="label">Nombre de Usuario:</label>
+                <input type="text" name="nombreUsuario" placeholder="nombre de usuario"/>
+               </div>
+               <div><label class="label">Correo:</label>
+                <!-- <input type="text" name="nombreUsuario" placeholder="nombre de usuario"/> -->
+          <input style="margin-left: 90px;" id="email" type="email" name="email" placeholder="email"/>
+              </div>
+              <div><label class="label">Contraseña:</label>
+                <input style="margin-left: 60px;" type="password" name="password" placeholder="contraseña"/>
+                </div>
+              <label class="label">Rol:</label>
+              <input style="margin-left: 115px;" type="text" name="rol" placeholder="rol"/>
+              <button style="font-family: 'Roboto', sans-serif;
+              text-transform: uppercase;
+              outline: 0;
+              background: #324966;
+              width: 60%;
+              border: 0;
+              padding: 15px;
+              color: #FFFFFF;
+              font-size: 16px;
+              -webkit-transition: all 0.3 ease;
+              transition: all 0.3 ease;
+              cursor: pointer;
+              margin:20px 20px;color:white" type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
 

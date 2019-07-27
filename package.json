@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-passport-local",
+  "name": "teachme",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,13 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armando34u/Teach-me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/armando34u/Teach-me/issues"
+  },
+  "homepage": "https://github.com/armando34u/Teach-me#readme",
   "description": ""
 }
